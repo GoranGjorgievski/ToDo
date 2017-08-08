@@ -1,0 +1,88 @@
+$color-gris: #c1c2c3;
+$color-rojo: #E8AA8C;
+$color-verde: #5E616A;
+
+.btn-add {
+  background-color: #5E616A;
+  border: 1px solid #5E616A;
+  color: #fff;
+}
+.btn-add:hover {
+  color: #5E616A;
+  background-color: white;
+  border: 1px solid #5E616A;
+}
+.input-group {
+  margin: 5px;
+}
+.color-gray {
+  color: #c1c2c3;
+}
+
+.list {
+  background-color: #fff;
+  border: 1px solid darken(#F0F3F8, 30%);
+  width:360px;
+  display: inline-block;
+  padding: 10px;
+}
+
+.list h3 {
+  color:#5E616A;
+  background-color:#F9F3E6;
+  border: 2px solid #fff;
+  margin:1em 0 0 0;
+  padding:0.8em 0;
+  font-weight: 200;
+}
+
+ul {
+  margin:10% 0;
+}
+
+ul li {
+  list-style-type:none;
+  text-align:left;
+  padding:5% 0%;
+}
+
+input[type='checkbox'] + .pure-toggle {
+  display: inline-block;
+  color:$color-gris;
+  cursor: pointer;
+  font-weight: 200;
+  &:hover {
+    color:$color-rojo;
+  }
+  i{
+    width:30px;
+  }
+  span {
+    margin-left:10px;
+    vertical-align:super;
+  }
+}
+
+
+.todo-completed + .pure-toggle {
+  color:$color-verde;
+  i {
+    &:before {
+    content: "\f00c";
+    color: $color-verde;
+    }
+  }
+  span {
+    color: $color-verde;
+  }
+}
+
+.action-items i {
+  color: $color-gris;
+  cursor: pointer;
+}
+
+.action-items i:hover {
+  color: $color-rojo;
+  cursor: pointer;
+}
